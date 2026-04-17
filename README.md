@@ -1,89 +1,151 @@
-A Hybrid Test Automation Framework built using Selenium WebDriver + Java + TestNG, designed to demonstrate scalable UI automation practices using a real-world e-commerce application.
+<!-- ================= HEADER ================= -->
 
-This framework follows industry-standard design patterns such as Page Object Model (POM), Data-Driven Testing, and Modular Architecture, making it suitable for both learning and enterprise-level extension.
+<h1 align="center">🚀 Selenium Java Hybrid Automation Framework</h1>
 
-Key Features : 
-  Selenium WebDriver-based UI automation
-  Hybrid Framework (POM + Data-Driven + Utilities)
-  TestNG for test execution and management
-  Externalized test data (Excel / Properties)
-  Reusable utility methods
-  Configurable environment setup
-  Logging & reporting support
-  Scalable and maintainable structure
+<p align="center">
+  Scalable • Maintainable • Industry-Grade Test Automation Framework
+</p>
 
-Tech Stack Used
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-blue?style=for-the-badge&logo=java">
+  <img src="https://img.shields.io/badge/Selenium-Automation-green?style=for-the-badge&logo=selenium">
+  <img src="https://img.shields.io/badge/TestNG-Framework-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven">
+</p>
 
- Language        | Java                                    
- Automation Tool | Selenium WebDriver                      
- Test Framework  | TestNG                                  
- Build Tool      | Maven                                   
- Design Pattern  | Page Object Model (POM)                 
- Data Handling   | Apache POI                              
- Reporting       | Extent Reports
- Logging         | Log4j                                   
+---
 
+## 📌 Overview
 
-Project folder structure
+This project is a **Hybrid Test Automation Framework** built using:
+
+* Selenium WebDriver
+* Java
+* TestNG
+* Maven
+
+It follows a **modular and scalable design** combining:
+
+✔ Page Object Model (POM)
+✔ Data-Driven Testing
+✔ Utility-driven reusable architecture
+
+---
+
+## 🎯 Key Highlights
+
+✨ Clean and maintainable architecture
+✨ Separation of concerns (Test / Page / Utilities)
+✨ Externalized configuration
+✨ Reusable utilities
+✨ Easy to scale for enterprise-level projects
+
+---
+
+## 🧱 Tech Stack
+
+| Layer           | Technology              |
+| --------------- | ----------------------- |
+| Language        | Java                    |
+| Automation Tool | Selenium WebDriver      |
+| Test Framework  | TestNG                  |
+| Build Tool      | Maven                   |
+| Design Pattern  | Page Object Model (POM) |
+| Data Handling   | Apache POI / Properties |
+
+---
+
+## 📂 Project Structure
+
+```
+src
+├── main
+│   └── java
+│       ├── pageObjects
+│       ├── testBase
+│       └── utilities
 │
-├── src/main/java/
-│   ├── pageObjects/        # Page classes (POM)
-│   ├── testBase/           # Base setup (WebDriver init, config)
-│   ├── utilities/          # Reusable utilities (Excel, waits, etc.)
+├── test
+│   └── java
+│       ├── testCases
+│       └── testData
 │
-├── src/test/java/
-│   ├── testCases/          # Test classes
-│   ├── testData/           # Test data sources
+├── resources
+│   ├── config.properties
+│   └── testData files
 │
-├── src/test/resources/
-│   ├── config.properties   # Environment configuration
-│   ├── testData files      # Excel / JSON data
-│
-├── testng.xml              # Test execution suite
-├── pom.xml                 # Maven dependencies
-├── README.md               # Project documentation
+├── testng.xml
+└── pom.xml
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### 🔹 Prerequisites
+
+* Java (JDK 8+)
+* Maven
+* Chrome / Firefox
+* IDE (IntelliJ / Eclipse)
+
+---
+
+## 🧪 Test Execution Flow
+
+```
+TestNG → Base Class → WebDriver Init → Page Objects → Test Data → Assertions → Reports
+```
+
+---
+
+## 📊 Reports
+
+Default reports are generated in:
+
+```
+/test-output/index.html
+```
+
+---
+
+## 🛠️ Utilities Included
+
+* WebDriver helper methods
+* Wait utilities
+* Excel reader
+* Screenshot capture
+
+---
+
+## 🔄 Future Enhancements
+
+* 🔹 Selenium Grid integration
+* 🔹 Docker execution
+* 🔹 Parallel execution
+* 🔹 CI/CD (GitHub Actions / Jenkins)
+* 🔹 Allure / Extent Reports
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome!
+
+1. Fork the repo
+2. Create feature branch
+3. Commit changes
+4. Raise PR
+
+---
 
 
-Framework Design
+## 💡 Author
 
-This is a Hybrid Framework, combining:
-🔹 Page Object Model (POM)
-Each web page is represented as a class
-Web elements + actions encapsulated together
-Improves maintainability and reusability
-🔹 Data-Driven Testing
-Test data stored externally (Excel / Properties)
-Same test logic runs with multiple datasets
-🔹 Utility Layer
-Common reusable methods:
-Waits
-WebDriver utilities
-Excel handling
-Screenshot capture
-🔹 Base Class
-Centralized WebDriver setup
-Browser initialization
-Common setup/teardown logic
+Developed by **Shiva Krishna**
 
-Setup Instructions
-1. Prerequisites
-Java (JDK 8 or above)
-Maven
-IDE (IntelliJ / Eclipse)
-Browser (Chrome / Firefox)
+---
 
-
-Test Execution Flow : 
-TestNG triggers test execution
-Base class initializes WebDriver
-Page Objects interact with UI
-Test data is fetched externally
-Assertions validate results
-Reports generated after execution
-
-Utilities Included
-WebDriver reusable methods
-Excel reader utility
-Screenshot capture on failure
-Wait helpers (implicit/explicit)
-
+<p align="center">
+  ⭐ If you found this useful, consider starring the repo!
+</p>
